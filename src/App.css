@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0%;
+
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.header{
+  width: 100%;
+  height: 10vh;
+  background-color:black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.footer{
+  width: 100%;
+  height: 6vh;
+  background-color:black;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.content{
+  min-height:84vh;
+  width: 100%;
+}
+
+.boxes-wrapper{
+  border: 1px solid white;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+  margin-bottom:15px;
+}
+
+.box-income,
+.box-expense {
+  border: 1px solid #888383;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 80px;
+  transition: all 0.5s ease;
+}
+.box-expense:hover,
+.box-income:hover{
+  width:200px;
+  height:200px;
+  background-color: rgba(0,0,0,0.3);
+
+}
+
+.box-no-transactions{
+  border: 1px solid #888383;
+  height: 180px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.modal-overlay{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:300px;
+  height:300px;
+  border-radius: 10px;
+  background-color: white;
+  border:1px solid #980e0e;
+  position: relative;
+}
+
+.modal>h2{
+  margin-bottom: 10px;
+  font-size:30px;
+}
+
+.modal>input{
+  width: 90%;
+  height: 40px;
+  margin: 10px;
+  border: 1px solid #dedede;
+  padding: 5px;
+}
+.modal>button{
+  background-color: black;
+  color: white;
+  width: 40%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.modal-close-icon{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.transactions-wrapper{
+  width: 100%;
+  min-height: calc(100vh-16vh);
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom:20px;
+}
